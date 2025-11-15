@@ -30,7 +30,8 @@ app.get("/api/new-chat", (req, res) => {
   // Create empty conversation
   mockData.conversations[newId] = [];
 
-  res.json({ id: newId });
+  res.json({ sessionId: newId });
+
 });
 
 // -----------------------------------------
